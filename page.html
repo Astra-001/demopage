@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="page_files/styles.css">
+  <link rel="stylesheet" href="page_files/responsive.css">
+  <link rel="stylesheet" href="page_files/page.css">
+  <link rel="stylesheet" href="page_files/tooltip.css">
+  <link rel="stylesheet" href="page_files/listing-info.css">
+  <link rel="stylesheet" href="page_files/popup-modal.css">
+  <script src="page_files/out.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="page_files/font-suisse/stylesheet.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="manifest" href="#static/images/favicon/site.webmanifest">
+  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="#static/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="#static/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="#static/images/favicon/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/png" href="#static/images/favicon.ico">
+  <link rel="stylesheet" href="page_files/confirmationpage.css">
+  <link rel="stylesheet" href="page_files/cargoinfobox.css">
+  <title>Helloworld</title>
+</head>
+<body>
+  <div>
+    <!-- nothing -->
+  </div>
+  <div class="page-block">
+    <div id="brokerage-confirmationpage">
+      <div class="row">
+        <div class="two-column column-first">
+          <div id="brokerage-confirmationpage-left">
+            <div class="btl-row">
+              <a id="brokerage-confirmationpage-back" href="#"> ❮ Back to listing</a>
+            </div>
+            <div class="flight-route">
+              <h1>LAX→HKG</h1>
+            </div>
+            <div class="flight-map-box">
+              <img title="Map" alt="Map" id="brokerage-confirmationpage-map" src="page_files/brokerage-confirmationpage-map.svg">
+            </div>
+            <div class="row row-container">
+              <div class="two-column equal-width">
+                <div class="brokerage-cargoinfobox">
+                  <div class="cargoinfo-box-tittle">
+                    <h3>CARGO INFO</h3>
+                  </div>
+                  <div class="brokerage-cargoinfobox-data">
+                    <p class="brokerage-cargoinfobox-subtitle">Earliest drop off ⓘ <span class="brokerage-cargoinfobox-value">2022-04-21</span></p>
+                  </div>
+                  <div id="brokerage-cargoinfobox-cargoinfodata">
+                    <div class="brokerage-cargoinfobox-data">
+                      <p class="brokerage-cargoinfobox-subtitle">Gross weight ⓘ <span class="brokerage-cargoinfobox-value">226.80 kg</span></p>
+                    </div>
+                    <div class="brokerage-cargoinfobox-data">
+                      <p class="brokerage-cargoinfobox-subtitle">Volumetric weight ⓘ <span class="brokerage-cargoinfobox-value">75.60 kg</span></p>
+                    </div>
+                  </div>
+                  <div id="brokerage-cargoinfobox-cargoinfodata">
+                    <div class="brokerage-cargoinfobox-data">
+                      <p class="brokerage-cargoinfobox-subtitle">Chargeable weight ⓘ<span class="brokerage-cargoinfobox-value">226.80 kg</span></p>
+                    </div>
+                    <div class="brokerage-cargoinfobox-data">
+                      <p class="brokerage-cargoinfobox-subtitle">Vol/gross ⓘ<span class="brokerage-cargoinfobox-value">0.33</span></p>
+                    </div>
+                  </div>
+                  <ul id="brokerage-cargoinfobox-tagsbar">
+                    <li class="tags"><i class="fa fa-check"><!-- CSS --></i> Expedited</li>
+                    <li class="tags"><i class="fa fa-check"><!-- CSS --></i> Stackable</li>
+                    <li class="tags"><i class="fa fa-check"><!-- CSS --></i> Turnable</li>
+                    <li class="tags"><i class="fa fa-check"><!-- CSS --></i> Known shipper</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="two-column equal-width">
+                <div class="brokerage-cargoinfobox">
+                  <div class="cargoinfo-box-tittle">
+                    <h3>SERVICE REQUEST</h3>
+                  </div>
+                  <div class="brokerage-cargoinfobox-data">
+                    <p class="brokerage-cargoinfobox-subtitle">Aircraft ⓘ <span class="brokerage-cargoinfobox-value">Freighter, Wide body</span></p>
+                  </div>
+                  <div id="brokerage-cargoinfobox-service-request-data">
+                    <div class="brokerage-cargoinfobox-data">
+                      <p class="brokerage-cargoinfobox-subtitle">Flight ⓘ <span class="brokerage-cargoinfobox-value">Direct</span></p>
+                    </div>
+                  </div>
+                  <div id="brokerage-cargoinfobox-service-request-data">
+                    <div class="brokerage-cargoinfobox-data">
+                      <p class="brokerage-cargoinfobox-subtitle">Product ⓘ <span class="brokerage-cargoinfobox-value">General</span></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <span class="airlines-tittle">Airlines ⓘ</span>
+                  </div>
+                  <ul id="brokerage-cargoinfobox-airline-tags">
+                    <li class="tags"><img src="page_files/example-airline-icon.png" alt="Air Canada" style="width: 16px; height: 16px;">Air Canada</li>
+                    <li class="tags"><img src="page_files/example-airline-icon.png" alt="Korean Air" style="width: 16px; height: 16px;">Korean Air</li>
+                    <li class="tags"><img src="page_files/example-airline-icon.png" alt="Polar" style="width: 16px; height: 16px;">Polar</li>
+                    <li class="tags"><img src="page_files/example-airline-icon.png" alt="American Airlines" style="width: 16px; height: 16px;">American Airlines</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="two-column column-second">
+          <div id="brokerage-confirmationpage-right">
+            <form class="form-detail" method="get" action="/demo/brokerage/view">
+              <div class="second-coulmn-header">Quote with Helloworld</div>
+              <hr>
+              <div class="side-bar">
+                <div class="fees-coulumn">Fees</div>
+                <div class="brokerage-confirmationpage-quoterow">
+                  <div>
+                    Chargeable weight
+                  </div>
+                  <div>
+                    226.80 kg
+                  </div>
+                </div>
+                <div class="brokerage-confirmationpage-quoterow">
+                  <div>
+                    Helloworld fee
+                  </div>
+                  <div>
+                    Waived
+                  </div>
+                </div>
+                <input type="hidden" name="brokerage-request" value=
+                "">
+                <button class="sidebar-btn">Checkout→</button>
+
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <!-- nothing -->
+  </div>
+  <script>
+  Main.main()
+  </script>
+  <div id="login-modal" class="modal">
+    <form action="/login-post" method="post">
+      <table style="padding: 0px; min-width: 900px; border-spacing: 0;" class="login-modal-content">
+        <tbody>
+          <tr>
+            <td class="login-modal-left">
+              <h1><b>Log in</b></h1>
+              <p>Log in to book the best rates from Helloworld</p>
+              <div class="login-modal-inputs">
+                <label>Email:</label><br>
+                <input type="text" name="login-email"><br>
+                <label>Password:</label><br>
+                <input type="password" name="login-pwd">
+              </div><br>
+              <button class="login-modal-button" type="submit">Log in</button>
+              <p style="margin-top: 30px">Don't have an account? <a style="color: #f5993d" onclick="Main.showSignupModal()">Sign up</a></p>
+            </td>
+            <td class="login-modal-right">
+              <span onclick="Main.closeModal()" class="modal-close">×</span><img class="login-modal-image" src="page_files/login-modal.png" alt="Login modal image" title=
+              "Login modal image">
+              <h1><b>Fast, Easy, Affordable</b></h1>
+              <p style="padding-bottom: 20px">Helloworld allows you to instantly access and book the best possible air freight rates</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+  <div id="signup-modal" class="modal">
+    <table style="padding: 0px; min-width: 900px; border-spacing: 0;" class="login-modal-content">
+      <tbody>
+        <tr>
+          <td class="login-modal-left">
+            <h1><b>Sign Up</b></h1>
+            <p>Get started with a free account</p>
+            <div class="login-modal-inputs">
+              <label>Email:</label><br>
+              <input type="text"><br>
+              <label>Password:</label><br>
+              <input type="text">
+            </div><br>
+            <a class="login-modal-button" href="#">Sign up</a>
+            <p style="margin-top: 30px">Already have an account? <a style="color: #f5993d" onclick="Main.showLoginModal()">Login</a></p>
+          </td>
+          <td class="login-modal-right">
+            <span onclick="Main.closeModal()" class="modal-close">×</span><img class="login-modal-image" src="page_files/login-modal.png" alt="Login modal image" title=
+            "Login modal image">
+            <h1><b>Fast, Easy, Affordable</b></h1>
+            <p style="padding-bottom: 20px">Helloworld allows you to instantly access and book the best possible air freight rates</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

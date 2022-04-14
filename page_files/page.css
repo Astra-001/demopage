@@ -1,0 +1,438 @@
+/*
+ * Styling for page template.
+ *
+ * Copyright 2021  Inc.
+ */
+
+.footer-links {
+  display: inline-flex;
+  font-weight: 700;
+}
+
+.footer-link {
+  padding-right: 20px;
+}
+
+.footer-logo {
+  text-align: left;
+}
+
+/** Footer **/
+.footer {
+  margin-top: auto;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #3d3e54;
+  background-color: #fbf5ee;
+  text-align: left;
+}
+
+.footer-contact {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #3d3e54;
+  color: #fbf5ee;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  text-align: left;
+}
+
+.footer-contact h1 {
+  margin-bottom: 1%;
+}
+
+.footer-contact p {
+  display: inline-flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 2;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.footer-info {
+  /* padding-top is responsive */
+  padding-bottom: 1.5%;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+  font-size: 18px;
+  text-align: center;
+}
+
+.footer-info a {
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+}
+
+.footer-info p {
+  margin-top: 0%;
+}
+
+.footer-info a:after {
+  content: "\a\a";
+  white-space: pre;
+}
+
+.footer-copyright {
+  text-align: left;
+  padding-left: 1.5%;
+  padding-bottom: 0.5%;
+}
+
+.footer-contact-col {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.header {
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fbf5ee;
+  font-weight: 700;
+  z-index: 9999;
+  font-size: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Style the links inside the navigation bar */
+
+.header a {
+  color: #3d3e54;
+  text-align: center;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: #e57c66;
+}
+
+.header a:active {
+  color: #e57c66;
+}
+
+.header-link {
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+  cursor: pointer;
+}
+
+#header-logo {
+  float: left;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 18pt;
+}
+
+#desktop-menu {
+  justify-content: space-between;
+}
+
+/** Hamburger menu **/
+
+/* Hide the hamburger menu by default.
+ * We will show it using media queries. */
+#hamburger-menu {
+  display: none;
+}
+
+/* Hide the default checkbox */
+#hamburger-menu-toggle {
+  opacity: 0;
+}
+/* Style the hamburger menu button */
+#hamburger-menu-button {
+  display: flex; /* Use flexbox to center the content */
+  align-items: center; /* Center the button contents as well */
+  position: fixed;
+  top: 16.5px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* Simulate the 3 lines of the hamburger menu. */
+#hamburger-menu-button > span,
+#hamburger-menu-button > span::before,
+#hamburger-menu-button > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  /* This sets the colour and the middle line */
+  height: 2px;
+  background-color: #616161;
+}
+#hamburger-menu-button > span::before {
+  /* The top line */
+  content: '';
+  top: -8px;
+}
+#hamburger-menu-button > span::after {
+  /* The bottom line */
+  content: '';
+  top: 8px;
+}
+
+/* Animation durations */
+#hamburger-menu-button > span,
+#hamburger-menu-button > span::before,
+#hamburger-menu-button > span::after {
+  transition-duration: .25s;
+}
+.hamburger-menu-item {
+  transition-duration: .25s;
+}
+.hamburger-menu-box {
+  transition-duration: .25s;
+}
+
+#hamburger-menu-box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+
+/* Menu items */
+.hamburger-menu-item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 10px;
+}
+.hamburger-menu-item:hover {
+  background-color: #CFD8DC;
+}
+
+/* Transform the hamburger into an "x" icon when active. */
+#hamburger-menu-toggle:checked ~ #hamburger-menu-button > span {
+  transform: rotate(45deg);
+}
+#hamburger-menu-toggle:checked ~ #hamburger-menu-button > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#hamburger-menu-toggle:checked ~ #hamburger-menu-button > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* Hamburger menus should be hidden by default */
+#hamburger-menu-box {
+  visibility: hidden;
+}
+#hamburger-menu-toggle:checked ~ #hamburger-menu-box {
+  visibility: visible;
+  left: 0;
+}
+
+.coming-soon {
+  background-image: url("under-construction.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 1.5%;
+  padding-bottom: 5vh;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.legal {
+  float: right;
+  margin-right: 1.5%;
+  display: inline-flex;
+}
+
+/* Create three equal columns that float next to each other. */
+
+.three-column {
+  float: left;
+  width: 33.33%;
+}
+
+.three-column p {
+  max-width: 90%;
+}
+
+/* Create two equal columns that float next to each other. */
+
+.two-column.column-first {
+  width: 60%;
+}
+.two-column.column-second {
+  width: 40%;
+  height: inherit;
+  background-color: #eef3f4;
+}
+.fees-coulumn {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 0;
+  font-size: 29px;
+}
+.sidebar-btn {
+  background-color: #f04911;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 16px;
+  width: 100%;
+  margin: 17px 0px;
+}
+/* Clear floats after the columns. */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+ * Responsive layout - makes the columns stack on top of each
+ * other instead of next to each other.
+ */
+
+@media screen and (max-width: 600px) {
+  .two-column {
+    width: 100%;
+    height: auto;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .two-column.column-first {
+    width: 100%;
+  }
+  .two-column.column-second {
+    width: 100%;
+  }
+  .two-column.equal-width {
+    width: 100%;
+    height: auto;
+  }
+  .flight-route {
+    font-size: 22px;
+    font-weight: 900 !important;
+  }
+  .three-column {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-contact-col {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.white-box {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#right-col a {
+  margin-top: 0px;
+}
+
+#right-col {
+  text-align: right;
+  font-size: 30px;
+  margin-top: 1%;
+}
+
+#right-col a {
+  padding-right: 2.5%;
+  padding-left: 2.5%;
+}
+
+.page-block {
+  margin-top: auto;
+  width: 100%;
+  color: #3d3e54;
+  background-color: #fff;
+  text-align: left;
+  overflow: auto;
+}
+
+/* Provide some spacing around the contact button. */
+.contact-holder {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.contact {
+  text-align: center;
+  border-radius: 20px;
+  background-color: #e57c66;
+  color: #f2f2f2;
+  padding-right: 10%;
+  padding-left: 10%;
+  font-size: 22px;
+  display: inline-flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  white-space: nowrap;
+}
+
+.contact:hover {
+  background-color: #f2f2f2;
+  color: #3d3e54;
+}
+
+.contact:active {
+  background-color: #f2f2f2;
+  color: #3d3e54;
+}
+
+.footer-tiaca-logo {
+  height: 58px;
+  margin-right: 70px;
+  vertical-align: top;
+}
+
+.fa {
+  vertical-align: top;
+}

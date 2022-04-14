@@ -1,0 +1,56 @@
+/*
+ * Styling related to listings.
+ *
+ * Copyright 2021  Inc.
+ */
+
+/* Grid of information for display cargo specifications */
+.cargo-spec-info {
+  display: grid;
+  align-items: left;
+  grid-template-columns: repeat(2, 75px 1fr);
+  column-gap: 5%;
+}
+
+/* Grid for displaying cargo information */
+.cargo-details {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
+
+.cargo-details h2 {
+  /* Remove the default h2 margins, which are quite large... */
+  margin: 0;
+  /* Make the headers bold */
+  font-weight: 700;
+}
+
+.cargo-listing-col {
+  text-align: left;
+}
+
+.cargo-listing-vertical-info {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0;
+  height: 1.72em;
+}
+
+.cargo-details-compressed {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5%;
+}
+
+.cargo-details-compressed-row-2 {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  font-size: 18px;
+}
+
+

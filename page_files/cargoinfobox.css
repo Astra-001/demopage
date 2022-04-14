@@ -1,0 +1,82 @@
+/*
+ * cargoinfobox.css
+ * CSS for CargoInfoBox in the brokerage flow.
+ *
+ * Copyright 2022  Inc.
+ */
+
+.brokerage-cargoinfobox {
+  border: #bebec2 solid 1px;
+  color: #4d4d4d; /* text colour */
+}
+
+.brokerage-cargoinfobox-data {
+  display: flex;
+  flex: 1;
+}
+
+.brokerage-cargoinfobox-value {
+  display: block;
+  font-size: 20px;
+}
+
+#brokerage-cargoinfobox-airline-tags {
+  content: "";
+  clear: both;
+  display: block;
+  margin: 0 -43px;
+}
+
+#brokerage-cargoinfobox-airline-tags li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  border-radius: 18px;
+  border: #bebec2 solid 1px;
+  margin-top: 0.4rem;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+  color: #000;
+  padding: 0.4rem 0.4rem;
+  max-width: fit-content;
+  height: 20px;
+}
+
+#brokerage-cargoinfobox-tagsbar {
+  content: "";
+  clear: both;
+  display: block;
+  margin-left: -38px;
+  font-size: 0.8rem;
+}
+
+#brokerage-cargoinfobox-tagsbar > li {
+  background: #000;
+  color: #fff;
+  display: inline-block;
+  margin-right: 0.2rem;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin-top: 0.4rem;
+}
+
+#brokerage-cargoinfobox-service-request-data {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#brokerage-cargoinfobox-cargoinfodata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 700px) {
+  #brokerage-cargoinfobox-cargoinfodata {
+    flex-direction: row;
+    align-items: start;
+  }
+}
